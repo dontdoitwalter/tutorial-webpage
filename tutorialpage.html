@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="tutorialpage.js" type="text/css">
+    <link rel="stylesheet" href="tutorialpage.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+
+    <title>JavaScript 101: The Basics</title>
+</head>
+<body>
+    <header>
+        <p>Welcome to my JavaScript Tutorial</p>
+    </header>
+
+    <div class="navbar">
+        <nav>
+            <h1>What do you want to learn about?</h1>
+        <ul>
+            <a href="#objects" class="objects">Click here to learn about <b>Objects!</b></a>
+            <div class="divider"></div>
+            <a href="#arrays" class="arrays">Click here to learn about <b>Arrays!</b></a>
+            <div class="divider"></div>
+            <a href="#forLoops" class="forLoops">Click here to learn about <b>forLoops!</b></a>
+        </ul>
+        </nav>
+    </div>
+    
+    <section id="objects" name="objects">
+        <div class="textright">
+                <h2>Objects</h2>
+                <p>
+                JavaScript objects are containers for named values, called properties or methods. Think about a computer.
+                a computer is an object, a computer has properties such as what graphics card, motherboard and procesor
+                 you are using. An object stores all of that informtaion in a variable name to be called when you need it. 
+                 Check out the example below:
+            <pre><code><div class="samplecode">
+let PCsetup = {             //you can see in this example that the main object is PC setup, 
+    pc: {                   //in real world terms,everything that compiled together makes your gaming setup.
+        case: {             //objects can also contain other objects!
+            graphics:'',    //this line shows that a PC is not just a plastic box,
+            motherboard:'', //but it contains smaller parts that can be called.
+            processor:'',
+            cooling:'',
+            power:'',
+            hard-drive:'',
+            ram:'',
+        }
+    }
+    essentials:{
+        keyboard:'',
+        mouse:'',
+        monitor1:'',
+    }
+    accessories:{
+        headset:'',
+        external-speakers:'',
+        mouse-pad:'',
+        desk:'',
+        chair:'',
+    }
+    streaming-supplies:{
+        mic:'',
+        webcam:'',
+        stream-deck:'',
+    }
+}                   
+            </div></code></pre></p></div></section>
+<section id="arrays" name="arrays">
+    <div class="textright">   <h2>Arrays</h2>
+        <p>
+            Arrays are similar to objects in that they are used to store information. 
+            The most prominent use of arrays is as lists. Take for example a list of your favorite games.
+            To list them all as seperate variables would look like this:
+        <pre><code><div class="samplecode">
+let game1 = "Skyrim";
+let game2 = "Red Dead Redemption";
+let game3 = "Mass Effect Trilogy";           
+        </div></code></pre>
+        That is a lot of code and can become confused the more items their are!
+        Using an Array we can tie all these games to one variable and then call upon specific games
+        dependant on their index location. Check out this Array below:
+        <pre><code><div class="samplecode">
+//index values:   0                 1                     2                     3
+let favegames = ["Skyrim", "Red Dead Redemption", "Mass Effect Trilogy", "Bioshock Series", 
+                            
+//       4                 5                 6
+"League of Legends", "No Man's Sky", "Any TellTale Game"]   // rip telltale games :,(            
+        </div></code></pre>
+        As you can see we were able to list DOUBLE the amount of games, with one less line of code, all under ONE variable.
+        It is important to note the index values of each game, the list starts at 0 progresses forward, you will need this when 
+        you want to call a specific game or games instead of the entire list. Also note that we determine that the list is an array
+        by the use of square brackets "[  ]" instead of curly brackets "{  }".
+    </p> 
+</div>
+</section>
+
+
+<section id="forLoops" name="forLoops">
+    <div class="textright">
+        <h2>forLoops</h2>
+<p>
+    Loops execute a block of code a number of times. They are helpful when you want to run the same code repeatedly with a different value each time.
+    The code below is how a forLoop is formally setup.
+    <pre><code><div class="samplecode">
+        for(statement 1; statement 2; statement 3;){
+            code block to be executed
+        }  
+    </div></code></pre>
+    What the above code is saying is "Statement 1" is executed one time before the code block. "Statement 2" defines the condition for 
+    running the code block. "Statement 3" is excuted after the code block every time until the condition is met. The following code will 
+    count from 0 to 100 by 1's and stop at 100.
+    <pre><code><div class ="samplecode">
+for( x = 0; x <= 100; x ++){
+    console.log(x);
+}
+
+    </div></code></pre>
+
+</p>
+</div>
+</section>
+
+
+<footer>
+    <p>Walter Van Hooser || ElevenFifty Academy || Last Updated September 30th, 2018</p>
+</footer>
+</body>
+</html>
