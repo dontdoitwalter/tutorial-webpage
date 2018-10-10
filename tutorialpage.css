@@ -38,7 +38,7 @@ body{
     background-color: rgba(230, 12, 170, 0.6);
     margin: auto;
     position:fixed;
-    top:250px;
+    top:215px;
  }
  
  .samplecode{
@@ -86,4 +86,5 @@ body{
  footer{
     font-family: 'Poppins', sans-serif;
     text-align:center;
+    padding-top: 5em;
  }
